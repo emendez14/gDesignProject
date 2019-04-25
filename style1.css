@@ -1,6 +1,6 @@
 body {
-  padding: 0;
-  font-family: 'Quicksand';
+  font-family: 'Permanent Marker', cursive;
+  background-color: #ffd;
 }
 
 .background {
@@ -15,48 +15,20 @@ body {
   animation: slide 20s infinite;
 }
 
-@keyframes slide {
-  25% {
-    background: url(images3/camera.jpeg);
-    background-size: cover;
-  }
-
-  50% {
-    background: url(images3/camera2.jpeg);
-    background-size: cover;
-  }
-
-  75% {
-    background: url(images3/camera3.jpeg);
-    background-size: cover;
-  }
-
-  100% {
-    background: url(images3/camera.jpeg);
-    background-size: cover;
-  }
-}
-
-.header {
+.head-text {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: auto;
   padding: 20px;
+  animation: fadeIn 2s;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  letter-spacing: .3em;;
 }
 
-.header h1 {
-  font-size: 60px;
-}
-
-.header p {
-  font-size: 40px;
-  padding-top: 20px;
-}
-
-* {
-  margin: 0;
+.head-text {
+  font-size: 2.5em ;
 }
 
 .logo ul li {
@@ -124,72 +96,85 @@ nav li{
 
 #dropdown.active a:hover {
   color: #4286f4;
+  text-shadow: blue 0.1em 0.1em 0.2em;
 }
 
-.sub-head {
-  margin: 25px;
-  display:flex;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-.sub-head p {
-  padding: 35px;
-  line-height: 200%;
-}
-
-.social {
+.about {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding:25px;
-  margin: auto;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  color: black;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  border-bottom: 1px black solid;
+  text-shadow: #fff .1em .1em .1em;
 }
 
-.social h1 {
-  order:1;
-  font-size: 50px;
-  text-align: center;
+.about h1 {
+  padding-bottom: 20%;
+  font-size: 3em;
 }
 
-.social ul {
-  order: 2;
-  margin-top: 25px;
-  list-style: none;
-  margin: auto;
+.about p {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.5em;
 }
 
-.social li {
-  display: inline-block;
-  padding: 15px;
+.projects {
+  border-bottom: 1px black solid;
 }
 
-.social a:hover {
-  opacity: 0.7;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.contact h1 {
+  padding: 10%;
+  font-size: 3em;
 }
 
 footer {
-  background-color: #132644;
-  opacity: 0.9;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  border-top: #4286f4 3px solid;
-}
-
-footer p {
+  justify-content: center;
+  flex-direction: row;
+  background-color: #132644;
   color: #eee;
   padding: 25px;
+  border-top:  #4286f4 3px solid;
 }
 
-.header {
-  animation: fadeIn 2s;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slide {
+  25% {
+    background: url(images3/camera.jpeg);
+    background-size: cover;
+  }
+
+  50% {
+    background: url(images3/camera2.jpeg);
+    background-size: cover;
+  }
+
+  75% {
+    background: url(images3/camera3.jpeg);
+    background-size: cover;
+  }
+
+  99% {
+    background: url(images3/city.jpeg);
+    background-size: cover;
+  }
 }
 
 @keyframes fadeIn {
